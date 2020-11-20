@@ -11,6 +11,6 @@ class AdminEmployee extends Component
     public function render()
     {
         $this->admin_employee = Employee::orderBy('created_at', 'DESC')->get();
-        return view('admin.admin-employee');
+        return view('admin.employee');
     }
 }

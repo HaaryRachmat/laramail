@@ -37,7 +37,7 @@ Route::group(['middleware' => ['auth:sanctum', 'verified', 'authadmin']], functi
     })->name('admin.dashboard');
 
 
-    Route::get('admin-employee', AdminEmployee::class)->name('admin-employee');
+    Route::get('/admin/employee', AdminEmployee::class)->name('admin.employee');
 });
 
 Route::group(['midlleware' => ['auth:sanctum', 'verified']], function () {
